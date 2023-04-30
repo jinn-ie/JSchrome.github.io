@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSChrome</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bgimg">
+        <div class="head">
+            <h1>Jotion</h1>
+            <form id="login-form" class="hidden">
+                <div class="input">
+                    <label for="text">ID :</label>
+                    <input type="text">
+                    <label for="password">password :</label>
+                    <input type="password">
+                </div>
+                <input class="loginbtn" type="submit" value="LOGIN">
+            </form>
+            <div class="hello">
+                <p id="hello"></p>
+            </div>
+        </div>
+
+        <div class="body">
+            <div id="clwt">
+                <h2 id="clock">CLOCK</h2>
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="todo">
+                <form id="todo-list">
+                    <input type="text" placeholder="오늘 뭐 해야 함?">
+                    <input type="submit" value="등록">
+                </form>
+            </div>
+        </div>
+    </div>
     
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
